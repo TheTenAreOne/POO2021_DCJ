@@ -15,6 +15,16 @@ void FigurasController::agregarCuadrado(float lados){
     }
 }
 
+void FigurasController::agregarTriagulo( float base, float altura ){
+
+    if( listaTriangulo.size() < MAX_ITEMS ){
+        cout << "Agrego triangulo" << endl;
+        Triangulo *pTriTemp = new Triangulo(base, altura);
+        listaTriangulo.push_back(*pTriTemp);
+        pListaFiguras.push_back(pTriTemp);
+    }
+}
+
 void FigurasController::agregarRectagulo(const float largo, const float ancho)
 {
     if (listaRectangulo.size() < MAX_ITEMS)
@@ -69,6 +79,11 @@ list<Rectangulo> &FigurasController::getListaRectangulo()
 
 list<Cuadrado> &FigurasController::getListaCuadrado(){
     list<Cuadrado> &lista = listaCuadrado;
+    return lista;
+}
+
+list<Triangulo> &FigurasController::getListaTriangulo(){
+    list<Triangulo> &lista = listaTriangulo;
     return lista;
 }
 

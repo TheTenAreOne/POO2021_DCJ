@@ -4,6 +4,8 @@ Cuadrado::Cuadrado(){}
 
 Cuadrado::Cuadrado(float lados){
     this->lados = lados;
+    calcularArea();
+    calcularPerimetro();
 }
 
 void Cuadrado::calcularArea(){
@@ -15,9 +17,9 @@ void Cuadrado::calcularPerimetro(){
 }
 
 void Cuadrado::mostrarFigura(){
-    calcularArea();
-    calcularPerimetro();
-    cout << "Cuadrado: L:" << this->lados << "A:" << this->area << "P:" << this->perimetro << endl; 
+    cout << "Lado:" << this->lados << endl; 
+    cout << "Area:" << this->area << endl;
+    cout << "Perimetro:" << this->perimetro << endl; 
 }
 
 float Cuadrado::getLados(){

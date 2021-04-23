@@ -29,6 +29,7 @@ public:
     // Retorna referencia a la lista de rectangulos
     list<Rectangulo> &getListaRectangulo();
     list<Cuadrado> &getListaCuadrado();
+    list<Triangulo> &getListaTriangulo();
     void agregarRectagulo(float largo, float ancho);
 
     /**

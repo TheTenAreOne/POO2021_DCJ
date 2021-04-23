@@ -22,6 +22,7 @@ private:
 public:
     Triangulo();
     Triangulo(float base, float altura);
+    virtual void mostrarFigura();
     void calcularArea();
     void calcularPerimetro();
 };

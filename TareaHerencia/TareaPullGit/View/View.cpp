@@ -29,6 +29,31 @@ void View::pedirDatosCirculo()
     // Se llama al metodo del controller
     controller.agregarCirculo(radio);
 }
+
+void View::pedirDatosTriangulo(){
+    float base;
+    float altura;
+    do{
+        cout << "Digite la base: " << endl;
+        cin >> base;
+    }while (base <= 0);
+    do{
+        cout << "Digite la altura" << endl;
+        cin >> altura;
+    }while (altura <= 0);
+
+    controller.agregarTriagulo(base, altura);
+}
+
+void View::mostrarTriangulos(){
+    int cont = 0;
+    list<Triangulo> &refListaTriangulo = controller.getListaTriangulo();
+    for( list<Triangulo>::iterator it = refListaTriangulo.begin(); it != refListaTriangulo.end(); ++it ){
+        cout << "Triangulo " << ++cont << ";" << endl;
+        it->mostrarFigura();
+    }
+}
+
 void View::pedirDatosCuadrado(){
     float lados;
     do{
@@ -115,6 +140,12 @@ void View::verPrincipal()
             break;
         case 3:
             pedirDatosCirculo();
+            break;
+        case 5:
+            pedirDatosTriangulo();
+            break;
+        case 6:
+            mostrarTriangulos();
             break;
         case 7:
             mostrarTodos();

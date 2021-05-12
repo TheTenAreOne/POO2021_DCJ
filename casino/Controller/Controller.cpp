@@ -89,7 +89,7 @@ void Controller::retirarJugador(long idJugador) {
     Jugador *pJugador = this->casino.consultarJugador( idJugador );
     this->casino.retirarJugador( idJugador );
     pJugador->~Jugador();
-
+}
 void Controller::recargarGonzos(long idJugador) {
     cout << "Fase dos, por hacer \n";
 }

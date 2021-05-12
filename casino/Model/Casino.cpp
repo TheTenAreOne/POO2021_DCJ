@@ -46,14 +46,16 @@ vector<Juego *> &Casino::consultarJuegos() {
 void Casino::retirarJugador(long id) {
     // Pendiente por implementar
     // Investigue como remover el jugador del mapa
-    cout << "Fase dos, por hacer \n";
+
+    this->jugadoresMap.erase( id );
+
+    cout << "Juegaor eliminao :D \n";
 }
 
 
 double Casino::convertirGonzosPesos(float gonzos) {
     // Pendiente por implementar
-    cout << "Fase dos, por hacer \n";
-    return 0;
+    return (gonzos * 10000)
 }
 
 Casino::~Casino() {

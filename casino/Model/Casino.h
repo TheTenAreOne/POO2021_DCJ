@@ -32,6 +32,7 @@ public:
     double convertirPesosAGonzos(double dinero);
     double convertirGonzosPesos(float gonzos);
     vector<Juego*> & consultarJuegos();
+    //HOLA DANIEL
     bool verExisteJugador(long id);
     Jugador * consultarJugador(long id);
     void agregarJugador(Jugador * pJugador);

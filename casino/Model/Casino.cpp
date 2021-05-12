@@ -55,7 +55,7 @@ void Casino::retirarJugador(long id) {
 
 double Casino::convertirGonzosPesos(float gonzos) {
     // Pendiente por implementar
-    return (gonzos * 10000)
+    return (gonzos * 10000);
 }
 
 Casino::~Casino() {

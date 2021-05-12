@@ -12,7 +12,7 @@ Controller::Controller() {
   // Se agregan los juegos disponibles para el casino
   Mayor13 * juego1 = new Mayor13();
   DosColores * juego2 = new DosColores();
-  masCer
+  masCercano * juego3 = new masCercano();
   casino.agregarJuego(juego1);
   casino.agregarJuego(juego2);
   casino.agregarJuego(juego3);

@@ -1,6 +1,6 @@
 
-#ifndef CASINO_MAYOR13_H
-#define CASINO_MAYOR13_H
+#ifndef MAS_CERCANO_H
+#define MAS_CERCANO_H
 
 
 #include "Juego.h"

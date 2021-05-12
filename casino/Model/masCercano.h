@@ -11,6 +11,7 @@ class masCercano : public Juego {
 
 protected:
     virtual float calcularResultado(float gonzosApostar) override;
+    int numero;
 public:
     virtual float jugar(float gonzosApostar) override;
     virtual ~masCercano();

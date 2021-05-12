@@ -25,14 +25,11 @@ void Casino::agregarJuego(Juego * juego) {
 void Casino::agregarJugador(Jugador *pJugador) {
     this->jugadoresMap.insert({ pJugador->getId() , pJugador });
     // Se agrega el jugador al mapa de jugadores del casino
-    //Hola
 }
 
 bool Casino::verExisteJugador(long id) {
 
     // Si el jugador se encuentra en el mapa retorna true, de lo contrario retorna false
-
-    jugadoresMap[id];
 
     cout << "Por implementar \n";
 }

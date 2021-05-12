@@ -5,14 +5,17 @@
 #include "Controller.h"
 #include "../Model/Mayor13.h"
 #include "../Model/DosColores.h"
+#include "../Model/masCercano.h"
 
 Controller::Controller() {
   this->casino = Casino();
   // Se agregan los juegos disponibles para el casino
   Mayor13 * juego1 = new Mayor13();
   DosColores * juego2 = new DosColores();
+  masCer
   casino.agregarJuego(juego1);
   casino.agregarJuego(juego2);
+  casino.agregarJuego(juego3);
 
 }
 void Controller::agregarJugador(long id, string nombreJugador, double dinero)

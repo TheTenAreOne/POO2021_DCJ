@@ -5,9 +5,7 @@
 #include "Jugador.h"
 
 Jugador::Jugador()
-          :cantJuegos(0)
-{
-}
+          :cantJuegos(0){}
 // Hace llamada delegada al constructor por defecto
 Jugador::Jugador(long id, string nombre, float cantGonzos): Jugador() {
     this->id = id;
@@ -17,9 +15,7 @@ Jugador::Jugador(long id, string nombre, float cantGonzos): Jugador() {
 
 
 /* Destructor*/
-Jugador::~Jugador()
-{
-}
+Jugador::~Jugador(){}
 
 void Jugador::mostrarInfo() {
 

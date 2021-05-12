@@ -44,16 +44,24 @@ bool Controller::jugar(int idJuego, long idJugador, float gonzosApostar) {
     Juego * pJuegoAJugar = casino.consultarJuegos().at(idJuego-1);
 
     // Consutlta al jugador, consulta los gonzos iniciales, juega y obtiene el resultado
-
+    int resultadoGonzos;
+    resultadoGonzos = pJuegoAJugar->jugar( gonzosApostar );
 
     // Actualiza el saldo del jugador con el resultado
-
-
+    bool gano = true;
+    if( resultadoGonzos < 0 ){
+        gano = false;
+    }
+    this->casino.consultarJugador( idJugador )->actualizarGonzos( resultadoGonzos );
+    
     // Actualiza la cantidad de juegos jugados
-
+    this->casino.consultarJugador( idJugador)->aumentarJuegos();
 
     // Retorna verdadero si el jugador ganó y false si el jugador perdio
-    cout << "Por implementar \n";
+    if( gano ){
+        return true;
+    }
+    return false;
 }
 
 void Controller::verInfoJugador(long idJugador){

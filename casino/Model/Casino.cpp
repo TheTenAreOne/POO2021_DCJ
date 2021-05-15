@@ -29,9 +29,12 @@ void Casino::agregarJugador(Jugador *pJugador) {
 
 bool Casino::verExisteJugador(long id) {
 
-    // Si el jugador se encuentra en el mapa retorna true, de lo contrario retorna false
+    if(jugadoresMap[id] == NULL){
+        return false;
+    } 
 
-    cout << "Por implementar \n";
+    return true;
+
 }
 
 Jugador *Casino::consultarJugador(long id) {
